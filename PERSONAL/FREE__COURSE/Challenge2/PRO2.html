@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=h, initial-scale=1.0" />
+    <link rel="stylesheet" href="PRO2.css" />
+    <title>UniversalOxygen/Library_Form</title>
+  </head>
+  <body>
+    <div class="main-con">
+      <header class="header">
+        <h1 id="title"><strong>UniversalOxygen Library Form</strong></h1>
+        <p id="description">Be assured to have a really great experience</p>
+      </header>
+      <form action="" id="survey-form">
+        <div class="form-el">
+          <label id="name-el" for="name"><strong>Name</strong></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-con"
+            placeholder="Input your Name"
+          />
+        </div>
+        <div class="form-el">
+          <label id="email-el" for="email"><strong>Email</strong></label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            class="form-con"
+            placeholder="Input your Email"
+          />
+        </div>
+        <div class="form-el">
+          <label id="number-el" for="number"
+            ><strong>Age<span class="clue">(Optional)</span></strong></label
+          >
+          <input
+            type="number"
+            id="number"
+            min="6"
+            max="100"
+            class="form-con"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-el">
+          <p><strong>Best role description?</strong></p>
+          <select name="role" id="dropdown" class="form-con" required>
+            <option disabled selected value>Select an option</option>
+            <option value="student">Student</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="Job">Full Time Job</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-el">
+          <p><strong>Gender</strong></p>
+          <label>
+            <input type="radio" class="radio-el" value="male" />Male</label
+          >
+          <label>
+            <input type="radio" class="radio-el" value="female" />Female</label
+          >
+          <label>
+            <input
+              type="radio"
+              class="radio-el"
+              value="transgender"
+            />Transgender</label
+          >
+        </div>
+        <div class="form-el">
+          <p>
+            <strong>
+              Book Types or Genre<span class="clue"
+                >(Check all that apply)</span
+              >
+            </strong>
+          </p>
+          <label>
+            <input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="checkbox-el"
+            />History</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="checkbox-el"
+            />Politics</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="checkbox-el"
+            />Science & Tech</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="checkbox-el"
+            />Accounting</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="checkbox-el"
+            />Agriculture</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="city-meetups"
+              type="checkbox"
+              class="checkbox-el"
+            />weather</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="wiki"
+              type="checkbox"
+              class="checkbox-el"
+            />News & Sport</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="forum"
+              type="checkbox"
+              class="checkbox-el"
+            />Jornals</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="additional-courses"
+              type="checkbox"
+              class="checkbox-el"
+            />Others</label
+          >
+        </div>
+        <div class="form-el">
+          <p><strong>Comments & Suggestion</strong></p>
+          <textarea
+            name="comment"
+            id="comments"
+            cols="20"
+            rows="10"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+        <div class="form-el">
+          <button type="submit" id="submit"><strong>Submit</strong></button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cd87877487.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="hero.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="Hero" id="blur">
+      <div class="nav">
+        <img src="Logo.png" alt="" />
+        <div class="logo">
+          <h1>HERRSCHAFT</h1>
+        </div>
+        <div class="navigation">
+          <nav>
+            <ul id="menuList">
+              <li class="semi">
+                <img src="Logo.png" alt="" />
+                <h1>HERRSCHAFT</h1>
+              </li>
+              <hr />
+              <li><a href="">Home</a></li>
+              <li><a href="">About&nbsp;Us</a></li>
+              <li><a href="">Contact&nbsp;Us</a></li>
+              <li><a href="">Testimonies</a></li>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="login">
+          <h2>Login</h2>
+        </div>
+        <div class="button">
+          <button>Register</button>
+        </div>
+        <img class="bar" src="bars.png" onclick="togglemenu()" alt="" />
+      </div>
+      <div class="mid">
+        <div class="row">
+          <h2 class="strength">
+            The <em>Strength</em> of a<br />
+            Thousand Men.
+          </h2>
+          <p>The energy drink to resurrect strenght from within.</p>
+          <button>Get Pricing</button>
+        </div>
+        <div class="con-lady"></div>
+      </div>
+      <div class="drink">
+        <div class="fun"></div>
+        <img
+          class="image1"
+          src="undraw_having_fun_re_vj4h 2.png"
+          alt="image of people having fun"
+        />
+      </div>
+      <img class="vector_arrow1" src="Group46.png" alt="scswd" />
+    </section>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+
+      menuList.style.maxHeight = "0px";
+
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "100%";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
